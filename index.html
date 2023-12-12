@@ -7,13 +7,18 @@
     <!-- Import Font Awsome -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        .header {
+        header.header{
             display: flex;
             align-items: center;
             justify-content: space-between;
             background-color: #fff;
             padding: 10px 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
         }
         .icon {
             width: 30px;
@@ -134,9 +139,12 @@
         }
         .comment-author {
             font-weight: 600;
+            font-size: 16px;
         }
         .comment-text {
             margin-left: 5px;
+            font-size: 14px;
+            margin: 0;
         }
         .comment-sec {
             height: 100%;
@@ -183,11 +191,13 @@
         }
     </style>
 </head>
-<div class="header">
-    <a href="/home"><img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" class="icon"></a>
-    <input type="text" placeholder="Search..." class="search-box">
-    <a href="/settings"><img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" class="icon"></a>
-</div>
+<header class="header">
+    <nav role="navigation">
+        <a href="/home"><img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" class="icon"></a>
+        <input type="text" placeholder="Search..." class="search-box">
+        <a href="/settings"><img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" class="icon"></a>
+    </nav>
+</header>
 <body>
     <div class="post-container">
         <div class="post-header">
@@ -203,32 +213,32 @@
                         <div class="comment" role="button">
                             <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="comment-user-image">
                             <div class="comment-content">
-                                <em class="comment-author">fs445s</em>
-                                <i class="comment-text">fr haha</i>
+                                <p class="comment-author">fs445s</p>
+                                <p class="comment-text">fr haha</p>
                             </div>
                         </div>
                     
                         <div class="comment" role="button">
                             <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="comment-user-image">
                             <div class="comment-content">
-                                <em class="comment-author">w8e0r</em>
-                                <i class="comment-text">Relateable</i>
+                                <p class="comment-author">w8e0r</p>
+                                <p class="comment-text">Relateable</p>
                             </div>
                         </div>
                     
                         <div class="comment" role="button">
                             <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="comment-user-image">
                             <div class="comment-content">
-                                <em class="comment-author">asi8d</em>
-                                <i class="comment-text">True words never have been spoken...</i>
+                                <p class="comment-author">asi8d</p>
+                                <p class="comment-text">True words never have been spoken...</p>
                             </div>
                         </div>
                     
                         <div class="comment" role="button">
                             <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="comment-user-image">
                             <div class="comment-content">
-                                <em class="comment-author">ucas23</em>
-                                <i class="comment-text">Litrally!</i>
+                                <p class="comment-author">ucas23</p>
+                                <p class="comment-text">Litrally!</p>
                             </div>
                         </div>
                     </div>
